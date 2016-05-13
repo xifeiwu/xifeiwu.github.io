@@ -42,10 +42,6 @@ blockquote, q {
 	quotes: "" "";
 }
 
-.clear {
-	clear:both;
-}
-
 
 /* LAYOUT */
 /* ----------------------------------------- */
@@ -153,8 +149,13 @@ a:hover {
 	width:720px;
 	display: block;
 	padding-top:55px;
-	clear: both;
 	margin-left:4px;
+}
+
+.entry::after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 h1  {

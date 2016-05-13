@@ -5,10 +5,6 @@ body {
 	line-height: 17pt;
 }
 
-.clear {
-	clear:both;
-}
-
 a, a:hover, a:visited, a:active {
 	color:#7b90b5;
 	text-decoration: none;
@@ -46,7 +42,12 @@ a, a:hover, a:visited, a:active {
 	width:820px;
 	display: block;
 	padding-top:55px;
-	clear: both;
+}
+
+.entry::after {
+  display: block;
+  clear: both;
+  content: '';
 }
 
 h1 {
