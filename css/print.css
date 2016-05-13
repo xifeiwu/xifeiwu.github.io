@@ -50,36 +50,66 @@ a, a:hover, a:visited, a:active {
   content: '';
 }
 
-h1 {
-  width:500px;
-  font-size:42pt;
-  color:#1b4491;
-  margin-bottom:0;
+.entry h1 {
+  font-size: 42pt;
+  line-height: 42pt;
+  color: #1b4491;
 }
 
-h1 span {
-  font-size:21pt;
+.entry h1 span {
+  font-size: 21pt;
+  display: block;
+  color: #1b4491;
+}
+
+img.portrait {
+  width: 210px;
+  height: 280px;
+  margin-left: 4px;
+}
+
+.self {
+  width:250px;
+  padding-top:11px;
+  margin-bottom:15px;
+}
+
+.self ul {
+  padding-top: 10px;
+}
+
+.self ul li.ad {
+  background-image:url(../images/icn-ad.gif);
+}
+
+.self ul li.mail {
+  background-image:url(../images/icn-mail.gif);
+}
+
+.self ul li.tel {
+  background-image:url(../images/icn-tel.gif);
+}
+
+.self ul li.web {
+  background-image:url(../images/icn-web.gif);
+}
+
+.self ul li {
+  background-repeat: no-repeat;
+  padding-left:26px;
+  background-position: 0 .1em;
+  height:25px;
   display:block;
-  margin-left:15px;
-  margin-top:20px;
-  color:#1b4491;
+  margin-top:-2px;
 }
 
-h2 {
-  width:180px;
+h2.category {
+  width: 180px;
   height: 23px;
   text-align: right;
-  padding:0;
-  margin:0;
-  clear:both;
   font-size:22pt;
-  margin-bottom:-12px;
-  color:#1b4491;
-}
-
-p {
-  width:600px;
-  margin-left:40px;
+  color: #1b4491;
+  margin-bottom: -12px;
 }
 
 div.content {
@@ -88,7 +118,6 @@ div.content {
 }
 
 div.item {
-  /*clear: both;*/
   display: flex;
   flex-direction: row;
   padding:0;
@@ -96,29 +125,21 @@ div.item {
   overflow: hidden;
   padding-top:32px;
 }
-ul.list {
-  clear: both;
-  padding:0;
-  margin:0;
-  overflow: hidden;
-}
 
-ul.list li {
-  display:block;
-  float:right;
-  padding-top:32px;
-}
-
-
-h3.title {
-  width:180px;
+.item h3.title {
+  width: 180px;
   text-align: right;
-  padding:0;
+  padding: 0;
   font-size: 13pt;
-  color:black;
+  color: black;
 }
 
-em {
+.item .description {
+  margin-left: 40px;
+  width: 540px;
+}
+
+.description em {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   color:#999;
@@ -127,25 +148,15 @@ em {
   padding-top:0;
 }
 
-ul.info {
-  float:right;
-  width:600px;
-  margin-left:40px;
-  background: none;
-  list-style: square;
-  
+.description ul.list {
+  list-style: dotted outside;
 }
 
-ul.info li {
-  margin:0;
-  padding:0;
-  float:left;
-  display: block;
-  width:600px;
-  padding-left:0;
+.description ul.list li {
+  background-repeat: no-repeat;
+  margin-left: 10px;
   background-position: 0 .5em;
-  margin-top:12px;
-  list-style-type: square;
+  margin-top: 12px;
 }
 
 ul.skills {
@@ -166,11 +177,6 @@ ul.skills li {
   padding-left:0;
   background-position: 0 .5em;
   margin-top:6px;
-}
-
-img.portrait {
-  border:1px solid #000;
-  padding:10px; 
 }
 
 .self {
