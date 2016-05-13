@@ -62,45 +62,28 @@ a, a:hover, a:visited, a:active {
   color: #1b4491;
 }
 
-img.portrait {
+.self img.portrait {
   width: 210px;
   height: 280px;
   margin-left: 4px;
 }
 
-.self {
-  width:250px;
-  padding-top:11px;
-  margin-bottom:15px;
+.self .description ul {
+  font-size: 17px;
+  line-height: 25px;
+  list-style-type: none;
 }
 
-.self ul {
-  padding-top: 10px;
+.self .description ul li span{
+  width: 150px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-.self ul li.ad {
-  background-image:url(../images/icn-ad.gif);
-}
-
-.self ul li.mail {
-  background-image:url(../images/icn-mail.gif);
-}
-
-.self ul li.tel {
-  background-image:url(../images/icn-tel.gif);
-}
-
-.self ul li.web {
-  background-image:url(../images/icn-web.gif);
-}
-
-.self ul li {
-  background-repeat: no-repeat;
-  padding-left:26px;
-  background-position: 0 .1em;
-  height:25px;
-  display:block;
-  margin-top:-2px;
+.self .description ul li span::after {
+  content: ":";
+  margin-right: 20px;
 }
 
 h2.category {
@@ -177,32 +160,6 @@ ul.skills li {
   padding-left:0;
   background-position: 0 .5em;
   margin-top:6px;
-}
-
-.self {
-  width:500px;
-  float:left;
-  padding-top:11px;
-  margin-left:0;
-  margin-bottom:15px;
-  margin-left:38px;
-}
-
-.self ul {
-  padding-top: 10px;
-}
-
-.self ul li {
-  background-repeat: no-repeat;
-  padding-left:0;
-  background-position: 0 .1em;
-  height:25px;
-  display:block;
-  margin-top:-2px;
-}
-
-.social {
-  display:none;
 }
 
 /* ELEMENTS */

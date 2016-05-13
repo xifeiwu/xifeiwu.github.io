@@ -193,35 +193,23 @@ a:hover {
   margin-left: 4px;
 }
 
-
-/*.self ul {
-  padding-top: 10px;
-}*/
-
-/*.self ul li.ad {
-  background-image:url(../images/icn-ad.gif);
+.self .description ul {
+  font-size: 17px;
+  line-height: 25px;
+  list-style-type: none;
 }
 
-.self ul li.mail {
-  background-image:url(../images/icn-mail.gif);
+.self .description ul li span{
+  width: 150px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: right;
 }
 
-.self ul li.tel {
-  background-image:url(../images/icn-tel.gif);
+.self .description ul li span::after {
+  content: ":";
+  margin-right: 20px;
 }
-
-.self ul li.web {
-  background-image:url(../images/icn-web.gif);
-}*/
-
-/*.self ul li {
-  background-repeat: no-repeat;
-  padding-left:26px;
-  background-position: 0 .1em;
-  height:25px;
-  display:block;
-  margin-top:-2px;
-}*/
 
 h2.category {
   width: 180px;
