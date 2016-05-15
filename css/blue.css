@@ -269,6 +269,16 @@ div.item {
   margin-left: 15px;
 }
 
+.description ul.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.description ul.skills li {
+  width: 160px;
+}
 
 ol {
   float:right;
@@ -323,7 +333,7 @@ ul.unordered li {
   margin-top:0;
 }
 
-ul.skills {
+/*ul.skills {
   margin:0;
   padding:0;
   float:right;
@@ -344,7 +354,7 @@ ul.skills li {
   padding-left:10px;
   background-position: 0 .5em;
   margin-top:6px;
-}
+}*/
 
 ul.works {
   margin:0;
