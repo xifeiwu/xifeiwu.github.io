@@ -56,12 +56,16 @@ body {
   color: #000;
 }
 
-a, a:visited, a:active {
-  color:#7b90b5;
+a {
+  color: blue;
   text-decoration: none;
 }
 
 a:hover {
+  text-decoration: underline;
+}
+
+a:visited, a:active {
   color:#7b90b5;
   text-decoration: underline;
 }
