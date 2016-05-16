@@ -132,12 +132,12 @@ a:visited, a:active {
 
 .paper-top .social ul {
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
 }
 
 .paper-top .social ul li {
-  float: left;
-  width: 21px;
-  height: 24px;
   margin: 0;
   padding: 0;
   margin-left: 6px;
