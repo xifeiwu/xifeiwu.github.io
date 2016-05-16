@@ -124,9 +124,8 @@ a:visited, a:active {
 
 .paper-top .social {
   position: absolute;
-  right: 0px;
+  right: 15px;
   bottom: 0px;
-  width: 135px;
   padding-top: 10px;
 }
 
@@ -134,13 +133,18 @@ a:visited, a:active {
   list-style: none;
   display: flex;
   flex-direction: row;
-  align-items: flex-end;
+  align-items: center;
 }
 
 .paper-top .social ul li {
   margin: 0;
   padding: 0;
   margin-left: 6px;
+}
+
+.paper-top .social ul li.version {
+  font-size: 20px;
+  margin-right: 20px;
 }
 
 #paper-mid {
