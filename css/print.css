@@ -75,7 +75,7 @@ a, a:hover, a:visited, a:active {
 }
 
 .self .description ul li span{
-  width: 150px;
+  width: 250px;
   display: inline-block;
   text-transform: uppercase;
   text-align: right;
