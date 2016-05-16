@@ -137,9 +137,7 @@ div.item {
 
 .description ul.list li {
   background-repeat: no-repeat;
-  margin-left: 10px;
-  background-position: 0 .5em;
-  margin-top: 12px;
+  margin-left: 15px;
 }
 
 .description ul.skills {
