@@ -276,8 +276,12 @@ div.item {
   flex-wrap: wrap;
 }
 
-.description ul.skills li {
-  width: 160px;
+.description ul.skills li.three-column {
+  width: 30%;
+}
+
+.description ul.skills li.two-column {
+  width: 45%;
 }
 
 ol {

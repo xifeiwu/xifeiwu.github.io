@@ -142,24 +142,19 @@ div.item {
   margin-top: 12px;
 }
 
-ul.skills {
-  margin:0;
-  padding:0;
-  float:right;
-  width:600px;
-  margin-left:40px;
-  margin-top:-6px;
-  background: none;
-  list-style: square;
+.description ul.skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-ul.skills li {
-  margin:0;
-  padding:0;
-  width:176px;
-  padding-left:0;
-  background-position: 0 .5em;
-  margin-top:6px;
+.description ul.skills li.three-column {
+  width: 30%;
+}
+
+.description ul.skills li.two-column {
+  width: 45%;
 }
 
 /* ELEMENTS */
