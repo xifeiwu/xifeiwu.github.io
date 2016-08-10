@@ -249,6 +249,7 @@ div.item {
 }
 
 .item .description {
+  padding-right: 20px;
   margin-left: 40px;
   width: 600px;
 }
