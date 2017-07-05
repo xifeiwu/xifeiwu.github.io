@@ -228,6 +228,20 @@ a:visited, a:active {
   margin-left: 30px;
 }
 
+.introduce {
+  text-indent: 1.5rem;
+}
+.introduce p:nth-child(2) {
+  margin-top: 5px;
+}
+
+.summary {
+  text-indent: 1.5rem;
+}
+.summary p:nth-child(2) {
+  margin-top: 5px;
+}
+
 .description em {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;

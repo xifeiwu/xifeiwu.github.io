@@ -33,3 +33,18 @@ a, a:hover, a:visited, a:active {
 .description em {
   color: #999;
 }
+
+
+.introduce {
+  text-indent: 1.5rem;
+}
+.introduce p:nth-child(2) {
+  margin-top: 5px;
+}
+
+.summary {
+  text-indent: 1.5rem;
+}
+.summary p:nth-child(2) {
+  margin-top: 5px;
+}
