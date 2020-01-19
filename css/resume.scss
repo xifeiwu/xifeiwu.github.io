@@ -119,6 +119,10 @@ a:visited, a:active {
       }
     }
   }
+  p {
+    margin-bottom: 5px;
+    text-indent: 14px;
+  }
   .content.form {
     .form-item {
       &-label {
@@ -149,6 +153,11 @@ a:visited, a:active {
         ul {
           list-style: disc outside;
           margin-left: 16px;
+          li {
+            font-size: 14px;
+            line-height: 20px;
+            margin-bottom: 3px;
+          }
         }
       }
     }
@@ -191,17 +200,17 @@ a:visited, a:active {
         }
       }
       &.technologies {
-        ul.list {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          li.three-column {
-            width: 30%;
-          }
-          li.two-column {
-            width: 50%;
-          }
-        }
+        // ul.list {
+        //   display: flex;
+        //   flex-direction: row;
+        //   flex-wrap: wrap;
+        //   li.three-column {
+        //     width: 30%;
+        //   }
+        //   li.two-column {
+        //     width: 50%;
+        //   }
+        // }
       }
     }
   }
