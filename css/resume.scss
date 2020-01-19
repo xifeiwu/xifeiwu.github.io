@@ -1,0 +1,208 @@
+@charset "UTF-8";
+:root {
+  --title-width: 150px;
+}
+/* RESET */
+/* ----------------------------------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+
+
+/* LAYOUT */
+/* ----------------------------------------- */
+
+body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  /*background-color: #eee;*/
+  /*background-repeat: repeat;*/
+  font-size: 14px;
+  line-height: 20px;
+  color: #000;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:visited, a:active {
+  color: blue;
+  text-decoration: underline;
+}
+
+/* PAPER BACKGROUND */
+/* ----------------------------------------- */
+
+.form {
+  font-size: 14px;
+  line-height: 18px;
+  .form-item {
+    display: flex;
+    margin-bottom: 8px;
+    &.no-margin {
+      margin-bottom: 0px;
+    }
+    &-label {
+      width: 150px;
+      text-align: right;
+      // font-weight: bold;
+      font-size: 14px;
+      line-height: 24px;
+      margin: 0px 12px 0px 0px;
+      // color: #FF4560;
+      color: #67C23A;
+    }
+    &-content {
+      flex: 1;
+    }
+  }
+}
+
+#resume {
+  width: 880px;
+  margin: 20px auto;
+  padding: 10px 20px 10px 0px;
+  background: rgba(136,136,136,.08);
+  /*border: 1px solid #777;*/
+  border-radius: 10px;
+  .icon-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    a {
+      margin-left: 6px;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .content.form {
+    .form-item {
+      &-label {
+        width: 140px;
+        font-size: 16px;
+        line-height: 24px;
+        color: #1b4491;
+        margin-right: 18px;
+        &.small-label {
+          font-size: 13px;
+          line-height: 16px;
+          color: #7b90b5;
+        }
+      }
+      &-content {
+        .title {
+          font-weight: bold;
+        }
+        .sub-title {
+          font-family: Georgia, "Times New Roman", serif;
+          font-style: italic;
+          color: #777777;
+          font-size: 12px;
+          line-height: 16px;
+          display: block;
+          padding-bottom: 3px;
+        }
+        ul {
+          list-style: disc outside;
+          margin-left: 16px;
+        }
+      }
+    }
+    & > .title {
+      text-align: center;
+      margin-bottom: 30px;
+      .name {
+        font-size: 26px;
+        line-height: 26px;
+        margin-bottom: 4px;
+      }
+      .position {
+        color: #1b4491;
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    & > .form-item {
+      &.basic-info {
+        & > .form-item-content {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .detail.form {
+            .form-item {
+              margin-bottom: 2px;
+              &-label {
+                width: 100px;
+                font-size: 14px;
+                line-height: 20px;
+                color: black;
+                margin-right: 2px;
+              }
+            }
+          }
+          img.portrait {
+            width: 150px;
+            height: 200px;
+          }
+        }
+      }
+      &.technologies {
+        ul.list {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          li.three-column {
+            width: 30%;
+          }
+          li.two-column {
+            width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
