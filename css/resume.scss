@@ -80,9 +80,9 @@ a:visited, a:active {
   line-height: 18px;
   .form-item {
     display: flex;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     &.no-margin {
-      margin-bottom: 0px;
+      margin-bottom: 2px;
     }
     &-label {
       width: 150px;
@@ -122,11 +122,11 @@ a:visited, a:active {
   .content.form {
     .form-item {
       &-label {
-        width: 140px;
+        width: 100px;
         font-size: 16px;
         line-height: 24px;
         color: #1b4491;
-        margin-right: 18px;
+        margin-right: 20px;
         &.small-label {
           font-size: 13px;
           line-height: 16px;
