@@ -109,6 +109,9 @@ a:visited, a:active {
       font-size: 14px;
       line-height: 20px;
       margin-bottom: 3px; }
+  #resume .comment {
+    font-size: 12px;
+    color: gray; }
   #resume .content.form .form-item-label {
     width: 100px;
     font-size: 16px;
