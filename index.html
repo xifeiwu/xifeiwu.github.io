@@ -68,7 +68,7 @@
             </li>
             <li class="form-item">
               <span class="form-item-label">个人博客：</span>
-              <span class="form-item-content"><a href="http://www.elif.site/blog/">http://www.elif.site/blog</a></span>
+              <span class="form-item-content"><a href="http://www.elif.site:6001/blog/">http://www.elif.site:6001/blog</a></span>
             </li>
           </ul>
           <img class="portrait" src="images/xifei_2020.jpg" alt="xifei wu" />
@@ -116,7 +116,7 @@
               <a href="https://github.com/tj/commander.js">commander</a>,
               <a href="https://github.com/node-modules/formstream.git">formstream</a>,
               <a href="https://github.com/dominictarr/through">through</a>,
-              <a href="https://github.com/deian/git-ssh-serve">git-ssh-serve</a><a href="https://github.com/deian/git-ssh-server/pull/4"><span class="comment">[提交了一个pr，并已经合入主线]</span></a>的源码。
+              <a href="https://github.com/deian/git-ssh-serve">git-ssh-serve</a><a href="https://github.com/deian/git-ssh-server/pull/4"><span class="comment">[提交了一个pr，并已经合入主线]</span></a>等项目的源码。
               也了解过
               <a href="https://github.com/cnpm/cnpmjs.org">cnpmjs</a>,
               <a href="https://github.com/digitalbazaar/forge">node-forge</a>
@@ -125,8 +125,8 @@
               等项目的运行机制
             </li>
             <li>熟悉网络编程。熟悉tcp协议及基于tcp协议之上的http协议、websocket协议，socks5协议，ssh协议，了解http(s)-agent, proxy(基于connet请求或socks协议)的工作机制，能熟练实现基于这些协议的编程。注重网络安全，对加密算法的类别及常用加密及认证方式有一定了解。</li>
-            <li>熟悉vue编程，读完
-              <a href="https://github.com/ElemeFE/element">element-ui</a><span class="comment">[提交了若干pr，其中有4个进入了主线]</span>大部分代码，能写一些常用的vue组件。读懂了
+            <li>熟悉vue编程，熟悉webpack配置，读完
+              <a href="https://github.com/ElemeFE/element">element-ui</a><span class="comment">[提交了若干pr，其中有4个进入了主线]</span>大部分代码，写过一些常用的vue组件。读懂了
               <a href="https://popper.js.org/popper-documentation.html">popperjs</a>,
               <a href="https://github.com/niksy/throttle-debounce">throttle-debounce</a>
               的源码。
@@ -137,16 +137,33 @@
         </div>
       </div>
       <div class="codes form-item no-margin">
-        <div class="form-item-label">参与项目</div>
+        <div class="form-item-label">个人项目</div>
       </div>
       <div class="technologies form-item">
         <div class="form-item-label"></div>
         <div class="form-item-content">
           <ul class="list">
-            <li><a href="https://m.benew.com.cn/sage/">哲前端开发</a>。哲是用于向用户提供咨询对话的平台。</li>
+            <li><a href="https://github.com/xifeiwu/git-ssh-admin">https://github.com/xifeiwu/git-ssh-admin</a>，一个基于git协议的git server，使用公钥认证，支持添加公钥和权限管理。目标是替换gitosis-admin（python语言开发）的功能。</li>
+            <li><a href="https://github.com/xifeiwu/busybox">https://github.com/xifeiwu/busybox</a>，开发中总结的常用代码及工具代码
+              <ul>
+                <li>/utils/，前端及node端常用的工具方法，前端xhr请求接口封装。</li>
+                <li>/assist/socks-proxy/，socks服务端，通过请求的目标host及配置文件config.js，决定在本地处理请求，还是将请求发送到某个设定的socks server处理。该工具可以代替自动代理配置proxy.pac的作用，实现灵活的代理配置。</li>
+                <li>/assist/socks/，client.js用于发出socks请求，server.js用于启动socks服务。</li>
+                <li>/assist/koa-server/，一个koa server，可作为http静态服务器，并提供了一些测试接口和请求转发接口。</li>
+                <li>/node_modules/formidable/lib/file2.js，解决了formidable在解析的过程中进行文件存储及文件名设置不灵活的问题。</li>
+                <li>/node_modules/logger-factory/，参考debug模块，添加了日志定制化输出的逻辑。</li>
+                <li>/bin/，通过nodejs实现一些常用工具，如文件大小、文件查找、端口检测，网络请求等</li>
+              </ul>
+            </li>
+            <li><a href="https://github.com/xifeiwu/spa-server">https://github.com/xifeiwu/spa-server</a>，一个定制化的用于spa静态页面展示的node服务，包括静态服务配置、请求转发、请求路径alias、日志输出配置等。</li>
+            <li><a href="https://github.com/xifeiwu/assist-server">https://github.com/xifeiwu/assist-server</a>，node服务端，包含用户认证，书签同步等接口。架构：eggjs + typescript + sequelize-cli + mysql</li>
+            <li><a href="https://github.com/xifeiwu/sage">https://github.com/xifeiwu/sage</a>，一个人机对话的前端页面。<a href="http://elif.site:6001/sage">[效果展示]</a></li>
+            <li><a href="https://github.com/xifeiwu/components-element-ui">https://github.com/xifeiwu/components-element-ui</a>，定制的vue element-ui组件库。</li>
+            <li><a href="https://github.com/xifeiwu/components-custom">https://github.com/xifeiwu/components-custom</a>，个人实现的一些vue组件库。</li>
+            <li></li>
+            <li><a href="https://github.com/xifeiwu/chrome-assist">https://github.com/xifeiwu/chrome-assist</a>，chrome插件，可设置后端服务地址，有登录认证，可以实现chrome浏览器书签同步。</li>
+            <li><a href="https://github.com/xifeiwu/generate-iconfont">https://github.com/xifeiwu/generate-iconfont</a>，一个将svg图片打包成字体的项目。</li>
             <li><a href="https://m.benew.com.cn/share/pages/activity/lucky-draw.html">抽奖活动页</a>。H5页面，用于拉新。</li>
-            <li>会牛app中H5页面开发，如<a href="https://m.benew.com.cn/#/training/similar/2010021831">相似练股页</a>，<a href="https://m.benew.com.cn/app/event-driven/event-driven.html">事件驱动</a>，<a href="https://m.benew.com.cn/app/long/long.html">中长线机会</a>，<a href="https://m.benew.com.cn/#/stock/hot/2010003597">热议排名</a>等。会牛后台接口开发，如行情，头条。</li>
-            <li>在会牛，视角渐渐从前端工程师转变为全栈工程师，收获很大。巩固了前端开发能力，能熟练使用python，熟悉数据库优化及sql语句，了解基于java spring框架的后台开发。</li>
           </ul>
         </div>
       </div>
