@@ -64,6 +64,9 @@ a:visited, a:active {
   color: blue;
   text-decoration: underline; }
 
+.hidden {
+  display: none !important; }
+
 /* PAPER BACKGROUND */
 /* ----------------------------------------- */
 .form {
