@@ -140,7 +140,7 @@ a:active {
   font-size: 14px;
   line-height: 24px;
   margin: 0px 12px 0px 0px;
-  color: #67C23A;
+  color: #67c23a;
 }
 .form .form-item-content {
   flex: 1;
@@ -150,9 +150,9 @@ a:active {
   margin: 20px auto;
   padding: 10px 24px 10px 0px;
   background: rgba(136, 136, 136, 0.08);
-  /*border: 1px solid #777;*/
 }
 #resume .icon-list {
+  height: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -190,6 +190,7 @@ a:active {
 }
 #resume .content.form .form-item-label.small-label {
   font-size: 13px;
+  padding-top: 3px;
   line-height: 16px;
   color: #7b90b5;
 }
