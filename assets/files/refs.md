@@ -6,3 +6,5 @@ redis资料：
 [medis](https://github.com/luin/medis), 一个基于electron的可视化的redis客户端，有时间研究一下。
 
 [PKI 体系概述](https://andy0570.com/2018/08/15/PKI%20%E4%BD%93%E7%B3%BB%E6%A6%82%E8%BF%B0/)
+
+[rfc of websocket](https://tools.ietf.org/html/rfc6455)
