@@ -1,1 +1,1 @@
-node-sass $(dirname $0)/resume.scss > $(dirname $0)/resume.css
+lessc $(dirname $0)/resume.less > $(dirname $0)/resume.css

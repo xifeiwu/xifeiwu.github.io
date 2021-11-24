@@ -1,16 +1,64 @@
+@charset "UTF-8";
 :root {
-  --title-width: 150px; }
-
+  --title-width: 150px;
+}
 /* RESET */
 /* ----------------------------------------- */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
   margin: 0;
   padding: 0;
   border: 0;
@@ -19,30 +67,35 @@ table, caption, tbody, tfoot, thead, tr, th, td {
   font-style: inherit;
   font-size: 100%;
   font-family: inherit;
-  vertical-align: baseline; }
-
+  vertical-align: baseline;
+}
 :focus {
-  outline: 0; }
-
+  outline: 0;
+}
 body {
-  line-height: 1; }
-
+  line-height: 1;
+}
 /* tables still need 'cellspacing="0"' in the markup */
 table {
   border-collapse: separate;
-  border-spacing: 0; }
-
-caption, th, td {
+  border-spacing: 0;
+}
+caption,
+th,
+td {
   text-align: left;
-  font-weight: normal; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: ""; }
-
-blockquote, q {
-  quotes: "" ""; }
-
+  font-weight: normal;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+}
+blockquote,
+q {
+  quotes: "" "";
+}
 /* LAYOUT */
 /* ----------------------------------------- */
 body {
@@ -51,113 +104,137 @@ body {
   /*background-repeat: repeat;*/
   font-size: 14px;
   line-height: 20px;
-  color: #000; }
-
+  color: #000;
+}
 a {
   color: blue;
-  text-decoration: none; }
-
+  text-decoration: none;
+}
 a:hover {
-  text-decoration: underline; }
-
-a:visited, a:active {
+  text-decoration: underline;
+}
+a:visited,
+a:active {
   color: blue;
-  text-decoration: underline; }
-
+  text-decoration: underline;
+}
 .hidden {
-  display: none !important; }
-
+  display: none !important;
+}
 /* PAPER BACKGROUND */
 /* ----------------------------------------- */
 .form {
   font-size: 14px;
-  line-height: 18px; }
-  .form .form-item {
-    display: flex;
-    margin-bottom: 10px; }
-    .form .form-item.no-margin {
-      margin-bottom: 2px; }
-    .form .form-item-label {
-      width: 150px;
-      text-align: right;
-      font-size: 14px;
-      line-height: 24px;
-      margin: 0px 12px 0px 0px;
-      color: #67C23A; }
-    .form .form-item-content {
-      flex: 1; }
-
+  line-height: 18px;
+}
+.form .form-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.form .form-item.no-margin {
+  margin-bottom: 2px;
+}
+.form .form-item-label {
+  width: 150px;
+  text-align: right;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0px 12px 0px 0px;
+  color: #67C23A;
+}
+.form .form-item-content {
+  flex: 1;
+}
 #resume {
   width: 860px;
   margin: 20px auto;
   padding: 10px 24px 10px 0px;
   background: rgba(136, 136, 136, 0.08);
-  /*border: 1px solid #777;*/ }
-  #resume .icon-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end; }
-    #resume .icon-list a {
-      margin-left: 6px; }
-      #resume .icon-list a img {
-        width: 20px;
-        height: 20px; }
-  #resume p {
-    margin-bottom: 5px;
-    text-indent: 14px; }
-  #resume ul {
-    list-style: disc outside;
-    margin-left: 16px; }
-    #resume ul li {
-      font-size: 14px;
-      line-height: 20px;
-      margin-bottom: 3px; }
-  #resume .comment {
-    font-size: 12px;
-    color: gray; }
-  #resume .content.form .form-item-label {
-    width: 100px;
-    font-size: 16px;
-    line-height: 24px;
-    color: #1b4491;
-    margin-right: 24px; }
-    #resume .content.form .form-item-label.small-label {
-      font-size: 13px;
-      line-height: 16px;
-      color: #7b90b5; }
-  #resume .content.form .form-item-content .title {
-    font-weight: bold; }
-  #resume .content.form .form-item-content .sub-title {
-    font-family: Georgia, "Times New Roman", serif;
-    font-style: italic;
-    color: #777777;
-    font-size: 12px;
-    line-height: 16px;
-    display: block;
-    padding-bottom: 3px; }
-  #resume .content.form > .title {
-    text-align: center;
-    margin-bottom: 30px; }
-    #resume .content.form > .title .name {
-      font-size: 26px;
-      line-height: 26px;
-      margin-bottom: 4px; }
-    #resume .content.form > .title .position {
-      color: #1b4491;
-      font-size: 14px;
-      line-height: 16px; }
-  #resume .content.form > .form-item.basic-info > .form-item-content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center; }
-    #resume .content.form > .form-item.basic-info > .form-item-content .detail.form .form-item {
-      margin-bottom: 0px; }
-      #resume .content.form > .form-item.basic-info > .form-item-content .detail.form .form-item-label {
-        width: 100px;
-        font-size: 14px;
-        line-height: 18px;
-        color: black;
-        margin-right: 2px; }
-    #resume .content.form > .form-item.basic-info > .form-item-content img.portrait {
-      width: 150px;
-      height: 200px; }
+  /*border: 1px solid #777;*/
+}
+#resume .icon-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+#resume .icon-list a {
+  margin-left: 6px;
+}
+#resume .icon-list a img {
+  width: 20px;
+  height: 20px;
+}
+#resume p {
+  margin-bottom: 5px;
+  text-indent: 14px;
+}
+#resume ul {
+  list-style: disc outside;
+  margin-left: 16px;
+}
+#resume ul li {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 3px;
+}
+#resume .comment {
+  font-size: 12px;
+  color: gray;
+}
+#resume .content.form .form-item-label {
+  width: 100px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b4491;
+  margin-right: 24px;
+}
+#resume .content.form .form-item-label.small-label {
+  font-size: 13px;
+  line-height: 16px;
+  color: #7b90b5;
+}
+#resume .content.form .form-item-content .title {
+  font-weight: bold;
+}
+#resume .content.form .form-item-content .sub-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+  color: #777777;
+  font-size: 12px;
+  line-height: 16px;
+  display: block;
+  padding-bottom: 3px;
+}
+#resume .content.form > .title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#resume .content.form > .title .name {
+  font-size: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+}
+#resume .content.form > .title .position {
+  color: #1b4491;
+  font-size: 14px;
+  line-height: 16px;
+}
+#resume .content.form > .form-item.basic-info > .form-item-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#resume .content.form > .form-item.basic-info > .form-item-content .detail.form .form-item {
+  margin-bottom: 0px;
+}
+#resume .content.form > .form-item.basic-info > .form-item-content .detail.form .form-item-label {
+  width: 100px;
+  font-size: 14px;
+  line-height: 18px;
+  color: black;
+  margin-right: 2px;
+}
+#resume .content.form > .form-item.basic-info > .form-item-content img.portrait {
+  width: 150px;
+  height: 200px;
+}
