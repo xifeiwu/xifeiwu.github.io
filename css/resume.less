@@ -144,7 +144,7 @@ ul {
     margin-bottom: 3px;
   }
 }
-#resume {
+.resume {
   width: 860px;
   margin: 20px auto;
   padding: 10px 24px 10px 0px;
@@ -164,16 +164,8 @@ ul {
       }
     }
   }
-  .comment {
-    font-size: 12px;
-    color: gray;
-  }
 
-  // a {
-  //   color: blue;
-  //   text-decoration: underline;
-  // }
-  & > .form-item {
+  .form-item {
     display: flex;
     margin-bottom: 10px;
     &.no-margin {
@@ -191,6 +183,11 @@ ul {
         padding-top: 3px;
         line-height: 16px;
         color: #7b90b5;
+      }
+      &.full-line {
+        width: 100% !important;
+        text-align: left !important;
+        padding-left: 20px !important;
       }
     }
     .form-item-content {
@@ -212,19 +209,21 @@ ul {
       line-height: 16px;
     }
   }
-  .basic-information {
+  & > .basic-info {
     position: relative;
-    padding-left: 30px;
-    & > .form-item {
-      margin-bottom: 0px;
-      line-height: 20px;
-      .form-item-label {
-        display: inline-block;
-        width: 100px;
-        font-size: 14px;
-        line-height: 18px;
-        color: black;
-        margin-right: 2px;
+    .my-info {
+      padding-left: 30px;
+      & > .form-item {
+        margin-bottom: 0px;
+        line-height: 20px;
+        .form-item-label {
+          display: inline-block;
+          width: 100px;
+          font-size: 14px;
+          line-height: 18px;
+          color: black;
+          margin-right: 2px;
+        }
       }
     }
     img.portrait {
@@ -234,6 +233,39 @@ ul {
       right: 30px;
       top: 50%;
       transform: translateY(-50%);
+    }
+  }
+  &.english {
+    & > .basic-info {
+      & > .form-item {
+        .form-item-label {
+          width: 60px;
+        }
+      }
+      .my-info {
+        padding-left: 0px;
+        & > .form-item {
+          .form-item-label {
+            width: 150px;
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+    & > .self-introduce, & > .technologies, & > .projects {
+      .form-item {
+        .form-item-label {
+          width: 36px;
+        }
+      }
+    }
+    & > .work-experience, & > .education {
+      .form-item {
+        .form-item-label {
+          width: 120px;
+          margin-right: 16px;
+        }
+      }
     }
   }
   .work-experience {
@@ -272,10 +304,4 @@ ul {
       margin-bottom: 5px;
     }
   }
-  // .form-item {
-  //   &.work-experience {
-  //     .company {
-  //     }
-  //   }
-  // }
 }

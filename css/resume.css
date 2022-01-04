@@ -136,7 +136,7 @@ ul li {
   line-height: 20px;
   margin-bottom: 3px;
 }
-#resume {
+.resume {
   width: 860px;
   margin: 20px auto;
   padding: 10px 24px 10px 0px;
@@ -144,31 +144,27 @@ ul li {
   font-size: 14px;
   line-height: 18px;
 }
-#resume > .icon-list {
+.resume > .icon-list {
   height: 20px;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
 }
-#resume > .icon-list a {
+.resume > .icon-list a {
   margin-left: 6px;
 }
-#resume > .icon-list a img {
+.resume > .icon-list a img {
   width: 20px;
   height: 20px;
 }
-#resume .comment {
-  font-size: 12px;
-  color: gray;
-}
-#resume > .form-item {
+.resume .form-item {
   display: flex;
   margin-bottom: 10px;
 }
-#resume > .form-item.no-margin {
+.resume .form-item.no-margin {
   margin-bottom: 2px;
 }
-#resume > .form-item .form-item-label {
+.resume .form-item .form-item-label {
   width: 100px;
   text-align: right;
   font-size: 16px;
@@ -176,38 +172,45 @@ ul li {
   color: #1b4491;
   margin-right: 24px;
 }
-#resume > .form-item .form-item-label.small-label {
+.resume .form-item .form-item-label.small-label {
   font-size: 13px;
   padding-top: 3px;
   line-height: 16px;
   color: #7b90b5;
 }
-#resume > .form-item .form-item-content {
+.resume .form-item .form-item-label.full-line {
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 20px !important;
+}
+.resume .form-item .form-item-content {
   flex: 1;
 }
-#resume > .author {
+.resume > .author {
   text-align: center;
   margin-bottom: 30px;
 }
-#resume > .author .name {
+.resume > .author .name {
   font-size: 26px;
   line-height: 26px;
   margin-bottom: 4px;
 }
-#resume > .author .position {
+.resume > .author .position {
   color: #1b4491;
   font-size: 14px;
   line-height: 16px;
 }
-#resume .basic-information {
+.resume > .basic-info {
   position: relative;
+}
+.resume > .basic-info .my-info {
   padding-left: 30px;
 }
-#resume .basic-information > .form-item {
+.resume > .basic-info .my-info > .form-item {
   margin-bottom: 0px;
   line-height: 20px;
 }
-#resume .basic-information > .form-item .form-item-label {
+.resume > .basic-info .my-info > .form-item .form-item-label {
   display: inline-block;
   width: 100px;
   font-size: 14px;
@@ -215,7 +218,7 @@ ul li {
   color: black;
   margin-right: 2px;
 }
-#resume .basic-information img.portrait {
+.resume > .basic-info img.portrait {
   width: 150px;
   height: 200px;
   position: absolute;
@@ -223,15 +226,35 @@ ul li {
   top: 50%;
   transform: translateY(-50%);
 }
-#resume .work-experience {
+.resume.english > .basic-info > .form-item .form-item-label {
+  width: 60px;
+}
+.resume.english > .basic-info .my-info {
+  padding-left: 0px;
+}
+.resume.english > .basic-info .my-info > .form-item .form-item-label {
+  width: 150px;
+  padding-right: 10px;
+}
+.resume.english > .self-introduce .form-item .form-item-label,
+.resume.english > .technologies .form-item .form-item-label,
+.resume.english > .projects .form-item .form-item-label {
+  width: 36px;
+}
+.resume.english > .work-experience .form-item .form-item-label,
+.resume.english > .education .form-item .form-item-label {
+  width: 120px;
+  margin-right: 16px;
+}
+.resume .work-experience {
   margin-top: 15px;
 }
-#resume .work-experience .company {
+.resume .work-experience .company {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
-#resume .work-experience .position {
+.resume .work-experience .position {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 14px;
@@ -240,15 +263,15 @@ ul li {
   padding-bottom: 3px;
   margin-bottom: 5px;
 }
-#resume .education {
+.resume .education {
   margin-bottom: 15px;
 }
-#resume .education .title {
+.resume .education .title {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
-#resume .education .sub-title {
+.resume .education .sub-title {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 14px;
