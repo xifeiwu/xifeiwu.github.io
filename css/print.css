@@ -5,11 +5,11 @@ body {
   line-height: 17pt;
 }
 
-#resume .icon-list {
+.resume .icon-list {
   display: none;
 }
 
-#resume a {
+.resume a {
   color: black;
   font-weight: normal;
 }
