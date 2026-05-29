@@ -246,15 +246,18 @@ ul li {
   width: 120px;
   margin-right: 16px;
 }
-.resume .work-experience {
+.resume .work-experience,
+.resume .personal-projects {
   margin-top: 15px;
 }
-.resume .work-experience .company {
+.resume .work-experience .company,
+.resume .personal-projects .company {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
-.resume .work-experience .position {
+.resume .work-experience .position,
+.resume .personal-projects .position {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 14px;
@@ -262,6 +265,10 @@ ul li {
   display: block;
   padding-bottom: 3px;
   margin-bottom: 5px;
+}
+.resume .personal-projects code {
+  font-family: Consolas, Monaco, "Courier New", monospace;
+  font-size: 13px;
 }
 .resume .education {
   margin-bottom: 15px;

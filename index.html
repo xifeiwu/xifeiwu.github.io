@@ -105,6 +105,67 @@
         </div>
       </div>
     </section>
+    <section class="projects personal-projects">
+      <div class="form-item">
+        <div class="form-item-label">个人项目</div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block"></div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            <a href="https://github.com/xifeiwu/busybox/blob/master/README.md" target="_blank">Busybox</a>
+            — 自研 TypeScript 基础设施工具集（Monorepo，核心库 2.5 万行+）
+          </div>
+          <div class="position">
+            三层架构 · 协议自研 · 生产验证（elif.site / CentOS）·
+            <a href="https://github.com/xifeiwu/busybox/blob/master/docs/cli-reference.md" target="_blank">CLI 参考</a>
+          </div>
+          <p style="margin-bottom: 6px;">
+            包括了很多常用工具，核心逻辑，包括http request proxy，http body parser, socks5协议，不依赖第三方库。
+          </p>
+          <ul class="list">
+            <li><strong>assets-management</strong>：基于元数据（SHA1）的静态资源 diff/同步与远程 push/pull，解决 Git
+              管理大二进制占用双倍空间</li>
+            <li><strong>process manager</strong>：无 daemon 的进程启停/监控/日志持久化，支持 detached 模式与异常自动重启。
+            <li><code>tcp-gateway</code>通过解析tcp第一个数据块的内容，进行协议探测与分发，决定将请求转向http层的koa服务，还是tcp层的socks服务</li>
+            <li><strong>build-install</strong> — <code>build</code> 编译 TS → <code>link</code> 链接全局 bin → <code>all</code> 一步完成 → <code>gz</code> 打包 dist 部署</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block">git-admin</div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            <a href="https://github.com/xifeiwu/git-ssh-admin" target="_blank">git-admin</a>
+            — Node.js 服务端 Git 仓库管理
+          </div>
+          <ul class="list">
+            <li>用来搭建自由的git服务，支持 <strong>SSH</strong> 与 <strong>HTTP</strong> 协议读写代码仓库，替代 gitosis 类方案</li>
+            <li>基于公钥认证与配置文件实现<strong>细粒度读写权限</strong>，可按仓库、用户灵活授权</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block">vite-tool</div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            <a href="https://github.com/xifeiwu/vite-tool" target="_blank">vite-tool</a>
+            — 中心化 Vite 构建工具（React 项目）
+          </div>
+          <ul class="list">
+            <li><strong>痛点</strong>：多 React 项目各自安装 Vite、配置重复、升级成本高</li>
+            <li>解决思路：实现一个全局指令vite-tool，通过读取项目根目录下的vite.config.ts文件，来实现vite的相关功能</li>
+            <li>实现方式：通过将详细需求告诉Claude Code，快速生成一个框架，再对细节进行打磨</li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section class="technologies">
       <div class=" form-item">
         <div class="form-item-label">专业积累</div>
@@ -114,7 +175,7 @@
         <div class="form-item-content">
           <ul class="list">
             <li>
-              <span>熟悉es6及typescript语法。熟悉nodejs平台及一些关键概念，比如stream，child preocess，http agent等。曾做过基于koa, nextjs,
+              <span>熟悉es6及typescript语法。熟悉nodejs平台及一些关键概念，比如stream，child process，http agent等。曾做过基于koa, nextjs,
                 eggjs等平台的nodejs服务开发。熟悉数据库表设计及redis使用。</span>
             </li>
             <li>阅读了很多nodejs和前端比较成熟的三方模块代码，比如
@@ -144,17 +205,7 @@
             </li>
             <li>有一定的运维经验，曾基于 Gitlab，Nginx，Docker，实现了一套CI/CD流程，并用于项目开发和部署。</li>
             <li>在外企工作四年半，能熟悉使用英语与国外同事进行交流</li>
-            <li>写了一些实用的工具，比如
-              <ul>
-                <li>git-admin，一个运行在服务端的git仓库管理程序，支持git, http协议读写代码仓库，支持公钥认证和权限管理。</li>
-                <li>assets-management，一个用于管理和同步静态资源的工具，避免git管理资源占用双倍磁盘空间的问题。</li>
-                <li>process-manager，一个用于管理进程的工具，可以方便地查看进程状态，启动，停止进程，查看进程日志。</li>
-                <li>socks-proxy，一个基于socks5协议的请求转发工具，支持更灵活的转发配置。</li>
-                <li>http-proxy，一个基于http协议的请求转发工具，相比node-http-proxy，支持更灵活的转发配置。</li>
-                <li>vite-tool，一个基于vite的工具，开发和打包基于vite的项目，不需要再每个项目中安装vite依赖。</li>
-              </ul>
-            </li>
-            <li class="hidden">熟悉网络编程。熟悉tcp协议及基于tcp协议之上的http(s)协议、websocket协议，socks5协议，ssh协议。</li>
+            <li class="hidden">自研基础设施工具（Busybox、git-admin、vite-tool 等）详见上方「个人项目」；熟悉网络编程：TCP、HTTP(S)、WebSocket、SOCKS5、SSH 等协议。</li>
           </ul>
         </div>
       </div>
@@ -345,29 +396,6 @@
             <li>参加「大学生电子设计大赛」，使用单片机 89C51 控制小车完成指定过程，获<a href="images/electronic-design.jpg" target="_blank">省级二等奖</a>。
             </li>
             <li>毕业论文<a href="materials/基于NAND Flash的嵌入式文件系统.pdf">《基于 NAND Flash 的嵌入式文件系统》</a>。</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section class="projects">
-      <div class="form-item">
-        <div class="form-item-label">个人项目</div>
-      </div>
-      <div class="form-item">
-        <div class="form-item-label"></div>
-        <div class="form-item-content">
-          <ul class="list">
-            <li>
-              <a href="https://github.com/xifeiwu/generate-iconfont" target="_blank">generate-iconfont</a> —
-              将 SVG 图片打包为 Web 字体
-            </li>
-            <li>
-              <a href="https://github.com/xifeiwu/content-scanner" target="_blank">content-scanner</a> —
-              Chrome 扩展，监听页面文本内容并将不合规页面信息发送至后端服务
-            </li>
-            <li>
-              <a href="http://elif.site/" target="_blank">elif.site</a> — 个人站点
-            </li>
           </ul>
         </div>
       </div>
