@@ -99,7 +99,7 @@
         <div class="form-item-content">
           <p>
             <span>2012年7月毕业，先后就职于中科院软件所、Acadine Technologies、凡普金科、完美世界，Conviva（北京瞰微智视科技有限公司）。</span>
-            <span>曾从事过嵌入式、GPU、Android、linux、python、java等平台上的开发，最近几年主要从事基于 Nodejs 后端和 React 前端的全栈开发。</span>
+            <span>曾从事过嵌入式、GPU、Android、Linux、Python、Java等平台上的开发，最近几年主要从事基于 Nodejs 后端和 React 前端的全栈开发。</span>
             <span>喜欢阅读代码，沉淀思想，可快速熟悉和切入其它语言平台和技术栈。善用 AI 辅助研发，提升开发效率。</span>
           </p>
         </div>
@@ -127,6 +127,7 @@
               <a target="_blank" href="https://github.com/axios/axios" target="_blank">axios</a>,
               <a target="_blank" href="https://github.com/websockets/ws" target="_blank">ws</a>,
               <a target="_blank" href="https://github.com/pinojs/pino" target="_blank">pino</a>,
+              <a target="_blank" href="https://github.com/foreversd/forever" target="_blank">forever</a>,
               并为<a target="_blank" href="https://github.com/node-formidable/node-formidable"
                 target="_blank">formidable</a><a target="_blank"
                 href="https://github.com/node-formidable/node-formidable/pull/513" class="hidden">[513]</a>,
@@ -142,6 +143,7 @@
                 target="_blank">[9408]</a>
               <a target="_blank" href="https://github.com/ElemeFE/element/pull/14196" class="hidden"
                 target="_blank">[14196]</a>
+                也写了一些实用的小工具，具体见「个人项目」部分，开发经验丰富。
             </li>
             <li>有一定的运维经验，曾基于 Gitlab，Nginx，Docker，实现了一套CI/CD流程，并用于项目开发和部署。</li>
             <li>在外企工作四年半，能熟练使用英语与国外同事进行交流</li>
@@ -170,7 +172,7 @@
             <li>
               负责 <strong>Conviva</strong> 企业级数据分析平台 <strong>Pulse</strong> 的 Web
               前端（React、TypeScript、reduxjs/toolkit、Webpack）图形化展示，及 Nodejs
-              服务端的逻辑，包括基于okta的用户登录认证，customer及user层的权限管理，数据查询和预处理。
+              服务端的逻辑，包括基于 Okta 的用户登录认证，Customer 及 User 层的权限管理，对数据层 Gateway 的查询和数据处理。
             </li>
             <li>参与内部react组件库 <strong>conviva-ui</strong>开发。</li>
             <li>将基于python2 django架构的逻辑，迁移到react + Nodejs + typescript的架构上。</li>
@@ -355,54 +357,96 @@
         </div>
         <div class="form-item-content">
           <div class="company">
-            <a href="https://github.com/xifeiwu/busybox/blob/master/README.md" target="_blank">Busybox</a>
-            — 自研 TypeScript 基础设施工具集（Monorepo，核心库 2.5 万行+）
+            Assets Management — 静态资源管理工具
           </div>
-          <div class="position">
-            三层架构 · 协议自研 · 生产验证（elif.site / CentOS）·
-            <a href="https://github.com/xifeiwu/busybox/blob/master/docs/cli-reference.md" target="_blank">CLI 参考</a>
-          </div>
-          <p style="margin-bottom: 6px;">
-            包括了很多常用工具，核心逻辑，包括http request proxy，http body parser, socks5协议，不依赖第三方库。
-          </p>
           <ul class="list">
-            <li><strong>assets-management</strong>：基于元数据（SHA1）的静态资源 diff/同步与远程 push/pull，解决 Git
+            <li><a href="https://github.com/xifeiwu/lib-node/tree/master/lib/assets-management" target="_blank">https://github.com/xifeiwu/lib-node/tree/master/lib/assets-management</a></li>
+            <li>基于元数据（SHA1）的静态资源 diff/同步与远程 push/pull，解决 Git
               管理大二进制占用双倍空间</li>
-            <li><strong>process manager</strong>：无 daemon 的进程启停/监控/日志持久化，支持 detached 模式与异常自动重启。
-            <li><code>tcp-gateway</code>通过解析tcp第一个数据块的内容，进行协议探测与分发，决定将请求转向http层的koa服务，还是tcp层的socks服务</li>
-            <li><strong>build-install</strong> — <code>build</code> 编译 TS → <code>link</code> 链接全局 bin →
-              <code>all</code> 一步完成 → <code>gz</code> 打包 dist 部署</li>
           </ul>
         </div>
       </div>
       <div class="form-item">
         <div class="form-item-label small-label">
-          <div style="text-align: center; display: inline-block">git-admin</div>
+          <div style="text-align: center; display: inline-block"></div>
         </div>
         <div class="form-item-content">
           <div class="company">
-            <a href="https://github.com/xifeiwu/git-ssh-admin" target="_blank">git-admin</a>
-            — Node.js 服务端 Git 仓库管理
+            Process Manager — 进程管理工具
           </div>
           <ul class="list">
-            <li>用来搭建自由的git服务，支持 <strong>SSH</strong> 与 <strong>HTTP</strong> 协议读写代码仓库，替代 gitosis 类方案</li>
-            <li>基于公钥认证与配置文件实现<strong>细粒度读写权限</strong>，可按仓库、用户灵活授权</li>
+            <li><a href="https://github.com/xifeiwu/lib-node/tree/master/lib/process-manager" target="_blank">https://github.com/xifeiwu/lib-node/tree/master/lib/process-manager</a></li>
+            <li>封装子进程启动的常用操作，包括进程启停/监控/日志查看与持久化，支持 detached 模式与异常自动重启。</li>
           </ul>
         </div>
       </div>
       <div class="form-item">
         <div class="form-item-label small-label">
-          <div style="text-align: center; display: inline-block">vite-tool</div>
+          <div style="text-align: center; display: inline-block"></div>
         </div>
         <div class="form-item-content">
           <div class="company">
-            <a href="https://github.com/xifeiwu/vite-tool" target="_blank">vite-tool</a>
-            — 中心化 Vite 构建工具（React 项目）
+            Socks Proxy — SOCKS5 代理工具
           </div>
           <ul class="list">
-            <li><strong>痛点</strong>：多 React 项目各自安装 Vite、配置重复、升级成本高</li>
-            <li>解决思路：实现一个全局指令vite-tool，通过读取项目根目录下的vite.config.ts文件，来实现vite的相关功能</li>
-            <li>实现方式：通过将详细需求告诉Claude Code，快速生成一个框架，再对细节进行打磨</li>
+            <li><a href="https://github.com/xifeiwu/lib-node/tree/master/lib/socks" target="_blank">https://github.com/xifeiwu/lib-node/tree/master/lib/socks</a></li>
+            <li>实现了 SOCKS5 协议及一个定制协议，Server端支持灵活的转发策略，如根据请求的 host 和 port 进行转发。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block"></div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            Http Proxy — HTTP 请求转发
+          </div>
+          <ul class="list">
+            <li><a href="https://github.com/xifeiwu/lib-node/tree/master/lib/http-proxy" target="_blank">https://github.com/xifeiwu/lib-node/tree/master/lib/http-proxy</a></li>
+            <li>实现了转发 HTTP及websocket请求的功能，相比node-http-proxy，支持更灵活的转发策略。
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block"></div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            Git Admin — 运行在服务端 Git 仓库管理程序
+          </div>
+          <ul class="list">
+            <li><a href="https://github.com/xifeiwu/git-admin" target="_blank">https://github.com/xifeiwu/git-admin</a></li>
+            <li>用来搭建自由的git服务，支持 <strong>SSH</strong> 与 <strong>HTTP</strong> 协议读写代码仓库，可以实现基于用户的更细粒度的权限控制</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block"></div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            Vite Tool — 中心化 Vite 构建工具
+          </div>
+          <ul class="list">
+            <li><a href="https://github.com/xifeiwu/vite-tool" target="_blank">https://github.com/xifeiwu/vite-tool</a></li>
+            <li>解决了 React 项目重复安装 Vite 依赖的问题，通过一个全局指令vite-tool，读取项目的vite.config.ts文件，来实现vite的相关功能。并提供了一些常用的逻辑，比如404，spa页面路由等。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="form-item">
+        <div class="form-item-label small-label">
+          <div style="text-align: center; display: inline-block"></div>
+        </div>
+        <div class="form-item-content">
+          <div class="company">
+            Busybox — 基础设施工具集
+          </div>
+          <ul class="list">
+            <li><a href="https://github.com/xifeiwu/busybox" target="_blank">https://github.com/xifeiwu/busybox</a></li>
+            <li>将常用逻辑，封装成可以直接在命令行中使用的工具</li>
           </ul>
         </div>
       </div>
