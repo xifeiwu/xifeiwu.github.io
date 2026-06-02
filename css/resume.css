@@ -1,128 +1,7 @@
 @charset "UTF-8";
-:root {
-  --title-width: 150px;
-}
-/* RESET */
-/* ----------------------------------------- */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-code,
-del,
-dfn,
-em,
-font,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-:focus {
-  outline: 0;
-}
-body {
-  line-height: 1;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-}
-blockquote,
-q {
-  quotes: "" "";
-}
-/* LAYOUT */
-/* ----------------------------------------- */
-body {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  /*background-color: #eee;*/
-  /*background-repeat: repeat;*/
-  font-size: 14px;
-  line-height: 20px;
-  color: #000;
-}
-a {
-  color: blue;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-a:visited,
-a:active {
-  color: blue;
-  text-decoration: underline;
-}
 .hidden {
   display: none !important;
 }
-/* PAPER BACKGROUND */
-/* ----------------------------------------- */
 p {
   margin-bottom: 5px;
   text-indent: 14px;
@@ -144,58 +23,23 @@ ul li {
   font-size: 14px;
   line-height: 18px;
 }
-.resume > .icon-list {
+.resume > .action-entries {
   height: 20px;
   display: flex;
+  gap: 6px;
   flex-direction: row;
   justify-content: flex-end;
 }
-.resume > .icon-list a {
-  margin-left: 6px;
-}
-.resume > .icon-list a img {
-  width: 20px;
-  height: 20px;
-}
-.resume .form-item {
-  display: flex;
-  margin-bottom: 10px;
-}
-.resume .form-item.no-margin {
-  margin-bottom: 2px;
-}
-.resume .form-item .form-item-label {
-  width: 100px;
-  text-align: right;
-  font-size: 16px;
-  line-height: 24px;
-  color: #1b4491;
-  margin-right: 24px;
-}
-.resume .form-item .form-item-label.small-label {
-  font-size: 13px;
-  padding-top: 3px;
-  line-height: 16px;
-  color: #7b90b5;
-}
-.resume .form-item .form-item-label.full-line {
-  width: 100% !important;
-  text-align: left !important;
-  padding-left: 20px !important;
-}
-.resume .form-item .form-item-content {
-  flex: 1;
-}
-.resume > .author {
+.resume > .title {
   text-align: center;
   margin-bottom: 30px;
 }
-.resume > .author .name {
+.resume > .title .name {
   font-size: 26px;
   line-height: 26px;
   margin-bottom: 4px;
 }
-.resume > .author .position {
+.resume > .title .position {
   color: #1b4491;
   font-size: 14px;
   line-height: 16px;
@@ -226,6 +70,32 @@ ul li {
   top: 50%;
   transform: translateY(-50%);
 }
+.resume .form-item {
+  display: flex;
+  margin-bottom: 10px;
+}
+.resume .form-item .form-item-label {
+  width: 100px;
+  text-align: right;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b4491;
+  margin-right: 24px;
+}
+.resume .form-item .form-item-label.small-label {
+  font-size: 13px;
+  padding-top: 3px;
+  line-height: 16px;
+  color: #7b90b5;
+}
+.resume .form-item .form-item-label.full-line {
+  width: 100% !important;
+  text-align: left !important;
+  padding-left: 20px !important;
+}
+.resume .form-item .form-item-content {
+  flex: 1;
+}
 .resume.english > .basic-info > .form-item .form-item-label {
   width: 60px;
 }
@@ -246,18 +116,15 @@ ul li {
   width: 120px;
   margin-right: 16px;
 }
-.resume .work-experience,
-.resume .personal-projects {
+.resume .work-experience {
   margin-top: 15px;
 }
-.resume .work-experience .company,
-.resume .personal-projects .company {
+.resume .work-experience .company {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
 }
-.resume .work-experience .position,
-.resume .personal-projects .position {
+.resume .work-experience .position {
   font-family: Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 14px;
@@ -265,10 +132,6 @@ ul li {
   display: block;
   padding-bottom: 3px;
   margin-bottom: 5px;
-}
-.resume .personal-projects code {
-  font-family: Consolas, Monaco, "Courier New", monospace;
-  font-size: 13px;
 }
 .resume .education {
   margin-bottom: 15px;
