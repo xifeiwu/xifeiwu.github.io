@@ -47,6 +47,9 @@ ul {
     &.from-right {
       flex-direction: row-reverse;
     }
+    &.no-margin {
+      margin: 0px;
+    }
 
     & > .left {
       width: @left-part-width;
@@ -124,26 +127,11 @@ ul {
 
   .work-experience,
   .education {
-    .sub-title {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-style: italic;
-      // color: #777777;
-      font-size: 14px;
-      line-height: 20px;
-      display: block;
-      padding-bottom: 3px;
-      margin-bottom: 5px;
-    }
-  }
-
-  .work-experience,
-  .education {
     .interval {
       display: inline-block;
       padding-top: 8px;
       text-align: center;
       font-size: 13px;
-      padding-top: 3px;
       line-height: 16px;
       color: #7b90b5;
     }

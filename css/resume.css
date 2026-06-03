@@ -37,6 +37,9 @@ ul li {
 .resume .layout.from-right {
   flex-direction: row-reverse;
 }
+.resume .layout.no-margin {
+  margin: 0px;
+}
 .resume .layout > .left {
   width: 124px;
   padding-right: 24px;
@@ -97,16 +100,6 @@ ul li {
   right: 30px;
   top: 50%;
   transform: translateY(-50%);
-}
-.resume .work-experience .sub-title,
-.resume .education .sub-title {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-style: italic;
-  font-size: 14px;
-  line-height: 20px;
-  display: block;
-  padding-bottom: 3px;
-  margin-bottom: 5px;
 }
 .resume .work-experience .interval,
 .resume .education .interval {
