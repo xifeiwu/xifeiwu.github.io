@@ -24,9 +24,8 @@ ul li {
   line-height: 18px;
 }
 .resume > .action-entries {
-  height: 20px;
   display: flex;
-  gap: 6px;
+  gap: 10px;
   flex-direction: row;
   justify-content: flex-end;
 }
@@ -107,7 +106,6 @@ ul li {
   padding-top: 8px;
   text-align: center;
   font-size: 13px;
-  padding-top: 3px;
   line-height: 16px;
   color: #7b90b5;
 }
