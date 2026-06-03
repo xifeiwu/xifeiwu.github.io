@@ -100,7 +100,7 @@ ul li {
 }
 .resume .work-experience .sub-title,
 .resume .education .sub-title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-style: italic;
   font-size: 14px;
   line-height: 20px;
@@ -120,7 +120,7 @@ ul li {
 }
 .resume .work-experience .sub-title,
 .resume .education .sub-title {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, 'Times New Roman', serif;
   font-style: italic;
   font-size: 14px;
   line-height: 20px;

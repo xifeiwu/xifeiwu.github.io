@@ -32,7 +32,7 @@ ul {
   font-size: 14px;
   line-height: 18px;
 
-  &>.action-entries {
+  & > .action-entries {
     height: 20px;
     display: flex;
     gap: 6px;
@@ -48,14 +48,14 @@ ul {
       flex-direction: row-reverse;
     }
 
-    &>.left {
+    & > .left {
       width: @left-part-width;
       padding-right: @left-part-padding-right;
       box-sizing: border-box;
       text-align: right;
     }
 
-    &>.right {
+    & > .right {
       flex: 1;
       max-width: @right-part-width;
     }
@@ -77,7 +77,7 @@ ul {
     font-weight: 500;
   }
 
-  &>.first-glance {
+  & > .first-glance {
     text-align: center;
     margin-bottom: 30px;
 
@@ -94,7 +94,7 @@ ul {
     }
   }
 
-  &>.general-info {
+  & > .general-info {
     position: relative;
 
     .info-list {
@@ -125,7 +125,7 @@ ul {
   .work-experience,
   .education {
     .sub-title {
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Georgia, 'Times New Roman', serif;
       font-style: italic;
       // color: #777777;
       font-size: 14px;
@@ -149,7 +149,7 @@ ul {
     }
 
     .sub-title {
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Georgia, 'Times New Roman', serif;
       font-style: italic;
       // color: #777777;
       font-size: 14px;
@@ -161,8 +161,8 @@ ul {
   }
 
   &.english {
-    &>.basic-info {
-      &>.form-item {
+    & > .basic-info {
+      & > .form-item {
         .form-item-label {
           width: 60px;
         }
@@ -171,7 +171,7 @@ ul {
       .my-info {
         padding-left: 0px;
 
-        &>.form-item {
+        & > .form-item {
           .form-item-label {
             width: 150px;
             padding-right: 10px;
@@ -180,9 +180,9 @@ ul {
       }
     }
 
-    &>.self-introduce,
-    &>.technologies,
-    &>.projects {
+    & > .self-introduce,
+    & > .technologies,
+    & > .projects {
       .form-item {
         .form-item-label {
           width: 36px;
@@ -190,8 +190,8 @@ ul {
       }
     }
 
-    &>.work-experience,
-    &>.education {
+    & > .work-experience,
+    & > .education {
       .form-item {
         .form-item-label {
           width: 120px;
