@@ -1,8 +1,12 @@
 body {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
   background-color: white;
-  font-size:13pt;
+  font-size: 13pt;
   line-height: 17pt;
+}
+.resume {
+  margin: 0px;
+  padding: 0px;
 }
 
 .resume .action-entries {
@@ -12,4 +16,7 @@ body {
 .resume a {
   color: black;
   font-weight: normal;
+}
+.resume .layout > .left {
+  width: 90px;
 }
